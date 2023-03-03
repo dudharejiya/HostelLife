@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/student_cardView_ID"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#79DC66"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/student_CVicon_ID"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_boy_24"
+                />
+
+            <TextView
+                android:id="@+id/student_CVname_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/student_CVicon_ID"
+            />
+
+            <TextView
+                android:id="@+id/student_CVemail_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/student_CVname_ID"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/student_CVicon_ID"
+                android:text="Email id"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/student_CVaddress_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/student_CVemail_ID"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/student_CVicon_ID"
+                android:text="Ahmedabad"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/student_delete_BTN_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_toEndOf="@id/student_CVicon_ID"
+                android:layout_below="@id/student_CVicon_ID"
+                />
+            <ImageView
+                android:id="@+id/staff_delete_BTN_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_toEndOf="@id/student_CVicon_ID"
+                android:layout_below="@id/student_CVicon_ID"
+                />
+
+            <ImageView
+                android:id="@+id/student_update_icon_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:layout_toRightOf="@id/staff_delete_BTN_ID"
+                android:layout_below="@id/student_CVicon_ID"
+                android:layout_marginHorizontal="40dp"
+                />
+
+            <ImageView
+                android:id="@+id/staff_update_icon_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:layout_toRightOf="@id/staff_delete_BTN_ID"
+                android:layout_below="@id/student_CVicon_ID"
+                android:layout_marginHorizontal="40dp"
+                />
+
+
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/staff_cardView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="20dp"
+        app:cardMaxElevation="15dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#79DC66">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/staff_CVicon_ID"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_boy_24"
+                />
+
+            <TextView
+                android:id="@+id/staff_CVname_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="staff Name"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/staff_CVicon_ID"
+                />
+
+
+            <TextView
+                android:id="@+id/staff_CVemail_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email id"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/staff_CVname_ID"
+                android:layout_toRightOf="@id/staff_CVicon_ID"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
